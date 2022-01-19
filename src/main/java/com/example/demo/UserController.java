@@ -25,6 +25,6 @@ public class UserController {
 	@DeleteMapping("/user")
 	void deleteUser() {
 		// sdkjhd
-		// New line added to learn new Branch.
+		//removed previous comment, added new comment.		
 	}
 }
