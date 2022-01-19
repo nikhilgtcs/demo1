@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.example.demo.entity.User;
+import com.example.demo.service.IUserService;
 
 @RestController
 public class UserController {
+	IUserService userService;
 	@GetMapping("/user")
 	String getUser() {
 		System.out.println("testing");
@@ -18,9 +20,11 @@ public class UserController {
 	@PostMapping("/user")
 	void createUser(@RequestBody User user) {
 		System.out.println(user.getName());
+		userService.saveUser(user);
 	}
 	@DeleteMapping("/user")
 	void deleteUser() {
 		// sdkjhd
+//		jdbhewbw
 	}
 }
