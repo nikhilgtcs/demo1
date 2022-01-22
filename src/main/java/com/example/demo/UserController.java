@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import com.example.demo.service.IUserService;
 
 @RestController
 public class UserController {
+	@Autowired
 	IUserService userService;
 	@GetMapping("/user")
 	String getUser() {
@@ -25,6 +27,6 @@ public class UserController {
 	@DeleteMapping("/user")
 	void deleteUser() {
 		// sdkjhd
-//		jdbhewbw
+		//removed previous comment, added new comment.	
 	}
 }
