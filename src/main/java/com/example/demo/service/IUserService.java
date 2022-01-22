@@ -21,5 +21,8 @@ public class IUserService {
 	public Optional<User> getUser(Integer id) {
 		return userRepository.findById(id);
 	}
+	public void deleteUser(Integer id) {
+		userRepository.deleteById(id);
+	}
 	
 }
