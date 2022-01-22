@@ -33,7 +33,7 @@ public class UserController {
 	}
 	
 	@PostMapping("/user") //creates records.
-	@ResponseStatus(code = HttpStatus.CREATED)
+	@ResponseStatus(code = HttpStatus.CREATED) // This Gives Response code "201"
 	void createUser(@RequestBody User user) {
 		System.out.println(user.getName());
 		userService.saveUser(user);
