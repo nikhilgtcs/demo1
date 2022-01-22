@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 My conflicting text - "Nikhil Gautam".
+=======
+Hi Nikhil
+>>>>>>> 4af046266dd466f611da2c16edbb9751df748db6
